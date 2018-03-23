@@ -43,7 +43,9 @@
     margin: 0 0 2rem 0;
     opacity: 0;
     padding: 0;
-    // transition: opacity .7s;
+    position: relative;
+    left: -44px;
+    transition: left .5s, opacity .5s;
   }
   
   .navbar__links-container--open {
@@ -52,7 +54,8 @@
   }
   
   .navbar__links-container__item--show {
-    // opacity: 1;
+    left: 0;
+    opacity: 1;
   }
 }
 
