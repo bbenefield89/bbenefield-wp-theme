@@ -1,0 +1,9 @@
+section.blog .site-main {
+  margin: 0 auto;
+  max-width: 1500px; }
+section.blog .blog-post small > a {
+  color: orangered; }
+section.blog .blog-post h2 > a {
+  color: inherit; }
+
+/*# sourceMappingURL=blog.css.map */

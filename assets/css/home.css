@@ -1,0 +1,136 @@
+#home-about-section header,
+#home-portfolio-section header,
+#home-blog-section header,
+#home-contact-section header {
+  justify-content: center; }
+
+/*****************
+** HERO SECTION **
+*****************/
+#home-hero-section {
+  background: rgba(63, 70, 90, 0.8);
+  color: #fff;
+  height: 70vh; }
+  #home-hero-section .hero-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 40px 10px 20px; }
+    #home-hero-section .hero-header h1,
+    #home-hero-section .hero-header p {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
+    #home-hero-section .hero-header p {
+      font-size: 1.25rem;
+      font-weight: 300; }
+  #home-hero-section .hero-button {
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    transition: background .5s, border .5s, color .5s;
+    width: 100%;
+    max-width: 400px; }
+    #home-hero-section .hero-button:hover {
+      background: #E31B6D; }
+  #home-hero-section a.hero-button,
+  #home-hero-section a.hero-button:link,
+  #home-hero-section a.hero-button:visited,
+  #home-hero-section a.hero-button:active {
+    /*color: #4a4a4a !important;*/ }
+
+/********************
+** COMPANY SECTION **
+********************/
+.company-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto; }
+
+/***************
+** WHAT I DO **
+***************/
+.home-about.row {
+  color: #4a4a4a; }
+  .home-about.row > div:nth-child(even) > div {
+    flex-direction: row-reverse; }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      .home-about.row > div:nth-child(even) > div > div:last-child {
+        padding-left: 50px; } }
+  .home-about.row > div > div > div:first-child {
+    display: flex;
+    align-items: center; }
+  .home-about.row > div > div > div:last-child {
+    max-width: 400px;
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .home-about.row > div > div > div:last-child {
+        max-width: 100%; } }
+  .home-about.row h2 {
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
+    @media screen and (min-width: 768px) {
+      .home-about.row h2 {
+        text-align: left; } }
+  .home-about.row hr {
+    width: 280px; }
+  .home-about.row p {
+    padding: 0 10px;
+    text-align: left; }
+    @media screen and (min-width: 768px) {
+      .home-about.row p {
+        padding: 0; } }
+  .home-about.row ul {
+    margin-left: 0;
+    padding: 0 10px;
+    text-align: left; }
+    .home-about.row ul li {
+      margin-bottom: .5rem; }
+
+/************
+** CONTACT **
+************/
+#home-contact-section {
+  color: #4a4a4a; }
+  #home-contact-section h2 {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
+  #home-contact-section input,
+  #home-contact-section textarea {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: #4a4a4a;
+    font-family: 'Raleway', sans-serif !important;
+    width: 100%;
+    max-width: 100%; }
+  #home-contact-section #contact-button {
+    background: #252934;
+    color: #fff;
+    font-size: 1.25em; }
+    #home-contact-section #contact-button:hover {
+      background: #E31B6D; }
+
+/**********
+** MODAL **
+**********/
+.modal .close {
+  background: #000;
+  color: #f2f2f2;
+  padding: 10px;
+  position: absolute;
+  right: 15px; }
+.modal .view-site {
+  background: #252934;
+  border-radius: 50px;
+  color: #f2f2f2;
+  transition: background .25s;
+  width: 50%; }
+  .modal .view-site:hover {
+    background: #E31B6D; }
+
+/*# sourceMappingURL=home.css.map */

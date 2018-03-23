@@ -1,0 +1,16 @@
+section.about {
+  
+  > div > div {
+    margin: 0 auto !important;
+    max-width: 1200px;
+    
+    > div {
+      
+      &:last-child {
+        display: flex;
+        align-items: center;
+        letter-spacing: 1.75px;
+      }
+    }
+  }
+}

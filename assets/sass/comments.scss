@@ -1,0 +1,62 @@
+div.comments-area {
+  background: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto 3rem;
+  padding: 10px;
+  max-width: 800px;
+  
+  > ol {
+    margin: 0;
+    padding: 0;
+    
+    .comment-body {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  li.comment {
+    background: #ddd;
+  }
+  
+  .comment-meta {
+    color: #fff;
+  }
+  
+  b {
+    letter-spacing: 1.1px
+  }
+  
+  a {
+    color: #fff !important;
+  }
+  
+  .comment-content {
+    padding: 10px;
+    
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+  }
+  
+  .reply {
+    padding: 0 10px;
+    
+    .comment-reply-link {
+      color: orangered !important;
+    }
+  }
+  
+  
+  time {
+    margin-right: 1.5rem;
+  }
+  
+  ol.children {
+    padding-left: 0;
+  }
+  
+  p.logged-in-as > a {
+    color: orangered !important;
+  }
+}

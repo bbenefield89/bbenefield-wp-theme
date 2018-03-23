@@ -1,0 +1,12 @@
+main.single-post {
+  background: #fdfdfd; }
+  main.single-post div.row {
+    background: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.25rem;
+    margin: 0 auto 3rem !important;
+    max-width: 1000px; }
+    main.single-post div.row .syntaxhighlighter {
+      font-size: 1rem !important; }
+
+/*# sourceMappingURL=single.css.map */

@@ -1,0 +1,122 @@
+/****************
+** GENERAL CSS **
+****************/
+body {
+  background: #eee;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  
+  .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  
+  .row {
+    margin: 0 !important;
+  }
+  
+  .company-container {
+    background: #fff;
+  }
+  
+  .links-background {
+    color: orangered !important;
+  }
+}
+
+// /*******************
+// ** NAVIGATION BAR **
+// *******************/
+// nav {
+//   box-shadow: 0 1px 8px #000;
+//   position: fixed;
+//   width: 100%;
+//   z-index: 99;
+  
+//   img {
+//     height: 30px;
+//     width: 30px;
+//   }
+  
+//   ul {
+//     margin-left: .5rem;
+//     padding-top: 20px;
+    
+//     li:nth-child(2) {
+//       margin: 20px 0;
+//     }
+    
+//     @media screen and (min-width: 992px) {
+//       margin-right: 300px;
+//       margin-left: auto;
+//       padding-top: 0;
+      
+//       li:nth-child(2) {
+//         margin: 0 44px;
+//       }
+//     }
+    
+    
+//     a,
+//     a:visited,
+//     a:focus,
+//     a:link,
+//     a:active {
+//       color: rgba(0, 0, 0, .9);
+//       text-decoration: none;
+//     }
+//   }
+  
+//   /* MEDIA QUERIES */
+//   @media screen and (min-width: 992px) {
+//     ul {
+//       position: initial;
+//     }
+//   }
+// }
+
+
+/************
+** IMPORTS **
+************/
+@import "header";
+@import "home";
+@import "about";
+@import "portfolio";
+@import "blog";
+@import "single";
+@import "comments";
+@import "sidebar";
+@import "coming-soon";
+
+/***********
+** FOOTER **
+***********/
+footer {
+  background: linear-gradient(135deg, #252934 0%, #3f465a 100%);
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  
+  #footer-social-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @each $icon, $color in $social-media-colors {
+    .fa-#{$icon} {
+      color: #f2f2f2;
+      cursor: pointer;
+      position: relative;
+      top: 8px;
+      transform: scale(2);
+      transition: color .25s;
+      
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+}

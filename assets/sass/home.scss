@@ -1,0 +1,208 @@
+$social-media-colors: (
+  twitter: #1DA1F2,
+  github: #24292E,
+  linkedin: #0077B5
+);
+
+#home-about-section header,
+#home-portfolio-section header,
+#home-blog-section header,
+#home-contact-section header {
+  justify-content: center;
+}
+
+/*****************
+** HERO SECTION **
+*****************/
+#home-hero-section, {
+  background: rgba(63, 70, 90, .8);
+  color: #fff;
+  height: 70vh;
+  
+  .hero-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 40px 10px 20px;
+    
+    h1,
+    p {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    }
+    
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+  }
+  
+  .hero-button {
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .9);
+    color: #fff;
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    transition: background .5s, border .5s, color .5s;
+    width: 100%;
+    max-width: 400px;
+    
+    &:hover {
+      background: #E31B6D;
+    }
+  }
+  
+  a.hero-button,
+  a.hero-button:link,
+  a.hero-button:visited,
+  a.hero-button:active {
+    /*color: #4a4a4a !important;*/
+  }
+}
+
+/********************
+** COMPANY SECTION **
+********************/
+.company-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+/***************
+** WHAT I DO **
+***************/
+.home-about.row {
+  color: #4a4a4a;
+  
+  > div {
+    
+      &:nth-child(even) {
+        
+        > div {
+          flex-direction: row-reverse;
+          
+          > div {
+            
+            &:last-child {
+              
+              @media screen and (min-width: 768px) and (max-width: 991px) {
+                padding-left: 50px;
+              }
+            }
+          }
+      }
+    }
+  }
+  
+  > div > div > div {
+    
+    &:first-child {
+      display: flex;
+      align-items: center;
+    }
+    
+    &:last-child {
+      max-width: 400px;
+      margin: 0 auto;
+      
+      @media screen and (min-width: 768px) {
+        max-width: 100%;
+      }
+    }
+  }
+  
+  h2 {
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  
+  hr {
+    width: 280px;
+  }
+  
+  p {
+    padding: 0 10px;
+    text-align: left;
+    
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
+  }
+  
+  ul {
+    margin-left: 0;
+    padding: 0 10px;
+    text-align: left;
+    
+    li {
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+/************
+** CONTACT **
+************/
+#home-contact-section {
+  color: #4a4a4a;
+  
+  h2 {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+  }
+  
+  input,
+  textarea {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: #4a4a4a;
+    font-family: 'Raleway', sans-serif !important;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  #contact-button {
+    background: #252934;
+    color: #fff;
+    font-size: 1.25em;
+    
+    &:hover {
+      background: #E31B6D;
+    }
+  }
+}
+
+/**********
+** MODAL **
+**********/
+.modal {
+  
+  .close {
+    background: #000;
+    color: #f2f2f2;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+  }
+  
+  .view-site {
+    background: #252934;
+    border-radius: 50px;
+    color: #f2f2f2;
+    transition: background .25s;
+    width: 50%;
+    
+    &:hover {
+      background: #E31B6D;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+div.comments-area {
+  background: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto 3rem;
+  padding: 10px;
+  max-width: 800px; }
+  div.comments-area > ol {
+    margin: 0;
+    padding: 0; }
+    div.comments-area > ol .comment-body {
+      margin-bottom: 1.5rem; }
+  div.comments-area li.comment {
+    background: #ddd; }
+  div.comments-area .comment-meta {
+    color: #fff; }
+  div.comments-area b {
+    letter-spacing: 1.1px; }
+  div.comments-area a {
+    color: #fff !important; }
+  div.comments-area .comment-content {
+    padding: 10px; }
+    div.comments-area .comment-content p {
+      font-size: 1.25rem;
+      font-weight: 300; }
+  div.comments-area .reply {
+    padding: 0 10px; }
+    div.comments-area .reply .comment-reply-link {
+      color: orangered !important; }
+  div.comments-area time {
+    margin-right: 1.5rem; }
+  div.comments-area ol.children {
+    padding-left: 0; }
+  div.comments-area p.logged-in-as > a {
+    color: orangered !important; }
+
+/*# sourceMappingURL=comments.css.map */
